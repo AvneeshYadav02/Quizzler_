@@ -27,11 +27,11 @@ class QuizInterface:
         self.score_text.grid(column=1, row=0, sticky="e")
         
         #--------------------Buttons--------------------#
-        check_image = PhotoImage(file="./images/true.png")
+        check_image = PhotoImage(file="./true.png")
         self.correct_button = Button(image=check_image, highlightthickness=0, command=self.check_click)
         self.correct_button.grid(pady=20, column=0, row=2)
 
-        cross_image = PhotoImage(file="./images/false.png")
+        cross_image = PhotoImage(file="./false.png")
         self.wrong_button = Button(image=cross_image, highlightthickness=0, command=self.cross_click)
         self.wrong_button.grid(pady=20, column=1, row=2)
 
